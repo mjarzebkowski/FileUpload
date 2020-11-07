@@ -1,0 +1,16 @@
+﻿@page "/fileupload"
+
+<h1>File Upload</h1>
+
+<p>Current count: @FIleUploadCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int FIleUploadCount = 0;
+
+    private void IncrementCount()
+    {
+        FIleUploadCount++;
+    }
+}
